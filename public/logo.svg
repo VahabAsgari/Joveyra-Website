@@ -1,0 +1,49 @@
+<svg
+  viewBox="0 0 500 500"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <g stroke="#E5E5E5" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    {/* Top bar with stylized flourishes - sweeping left loop (J) and right Arabic calligraphic tail */}
+    <path d="M 60 142 C 40 142, 60 100, 98 100 C 98 100, 100 142, 100 242" />
+    <path d="M 98 142 L 380 142" />
+    <path d="M 380 142 C 410 134, 450 110, 385 110 L 410 105" />
+    
+    {/* Bottom curl for J */}
+    <path d="M 100 142 L 100 395 C 100 405, 52 410, 52 290" />
+
+    {/* Massive Oval "O" */}
+    <ellipse cx="170" cy="235" rx="44" ry="85" />
+    {/* O crossbar curl (Phi) */}
+    <path d="M 124 235 Q 160 250, 206 215" />
+
+    {/* "V" and "E" Stacked / Placed */}
+    {/* V */}
+    <path d="M 220 145 L 253 228 L 280 145" />
+    {/* E */}
+    <path d="M 300 145 H 345" />
+    <path d="M 300 185 H 335" />
+    <path d="M 300 225 H 345" />
+    <path d="M 300 145 V 225" />
+    <circle cx="365" cy="165" r="5" fill="#E5E5E5" />
+
+    {/* Bottom Row: Y, R, A */}
+    {/* Y */}
+    <path d="M 220 238 L 253 290 L 285 238" />
+    <path d="M 253 290 V 325" />
+
+    {/* R */}
+    <path d="M 305 238 V 325" />
+    <path d="M 305 238 H 338 C 358 238, 358 275, 338 275 H 305" />
+    <path d="M 334 275 Q 355 295, 360 325" />
+
+    {/* A */}
+    <path d="M 400 238 L 375 325" />
+    <path d="M 400 238 L 448 322" />
+    <path d="M 383 295 H 430" />
+
+    {/* Bottom swooping horizon bar */}
+    <path d="M 152 322 L 448 322 C 452 322, 452 342, 438 342 Q 220 342, 175 365 C 160 375, 130 395, 170 395" />
+    <path d="M 410 370 H 445" />
+  </g>
+</svg>

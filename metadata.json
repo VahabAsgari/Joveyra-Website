@@ -1,0 +1,6 @@
+{
+  "name": "Joveyra",
+  "description": "Elite Systematic Quantitative Hedge Fund",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
