@@ -215,9 +215,9 @@ export function RegimeCascadeVisual() {
 
   return (
     <div className="w-full h-full flex items-center justify-center">
-      <div className="w-full max-w-[280px] h-[400px] flex flex-col justify-center py-2 text-zinc-400 font-mono text-[9px] gap-3">
+      <div className="w-full max-w-[280px] h-full max-h-[400px] flex flex-col justify-center py-2 text-zinc-400 font-mono text-[9px] gap-3">
         {/* Hidden Markov Model Panel */}
-        <div className="relative w-full h-[185px] border border-white/[0.04] bg-zinc-950/40 rounded-xl p-3 flex flex-col justify-between">
+        <div className="relative w-full border border-white/[0.04] bg-zinc-950/40 rounded-xl p-3 flex flex-col justify-between" style={{ minHeight: "195px" }}>
           <div className="flex justify-between items-center text-zinc-500 border-b border-white/[0.03] pb-1">
             <span className="tracking-wider uppercase font-semibold text-[7px] text-zinc-500">Regime Filtering (HMM)</span>
             <span className={`font-bold uppercase text-[7.5px] tracking-wider transition-colors duration-300 ${stateColors[activeRegime]}`}>

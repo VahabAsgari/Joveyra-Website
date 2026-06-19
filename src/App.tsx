@@ -472,7 +472,7 @@ export default function App() {
                       '--weave-duration': `${12 + Math.random() * 8}s` 
                      } as React.CSSProperties}
                   >
-                    Engineered For Absolute Processing Efficiency, Our Operational Infrastructure Prioritizes Mathematical Capital Preservation And Multi-Layered Risk Management. We Build Low-Latency Proprietary Models Designed To Extract Non-Correlated Alpha Structures Across Global Liquidity Pools.
+                    Our operational infrastructure relies on advanced mathematical modeling and rigorous quantitative analysis, deployed across multiple temporal regimes to ensure capital preservation and uncorrelated absolute returns.
                   </p>
                 </div>
                 

@@ -72,9 +72,9 @@ export default function Navbar() {
   return (
     <div className="fixed top-4 left-0 w-full px-4 z-50 flex justify-center">
       <nav 
-        className="w-full max-w-4xl bg-black/90 border border-white/5 backdrop-blur-md px-6 py-3 rounded-full flex items-center justify-center transition-all duration-300"
+        className="w-full max-w-4xl bg-black/90 border border-white/5 backdrop-blur-md px-6 py-3 rounded-full flex items-center transition-all duration-300"
       >
-        <div className="flex items-center justify-center gap-x-4 sm:gap-x-8 whitespace-nowrap overflow-x-auto no-scrollbar">
+        <div className="w-full flex items-center justify-start sm:justify-center gap-x-4 sm:gap-x-8 whitespace-nowrap overflow-x-auto no-scrollbar">
           {NAV_LINKS.map((link) => {
             const isActive = activeSection === link.id;
             return (

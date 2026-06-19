@@ -2,12 +2,10 @@ import React, { useEffect, useRef, useState } from "react";
 
 interface AudioPlayerProps {
   localAudioPath?: string;
-  fallbackAudioUrl?: string;
 }
 
 export default function AudioPlayer({
-  localAudioPath = "/ambient.mp3",
-  fallbackAudioUrl = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3"
+  localAudioPath = "/ambient.mp3"
 }: AudioPlayerProps) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -74,10 +72,7 @@ export default function AudioPlayer({
   }, []);
 
   const handleAudioError = () => {
-    if (audioSource === localAudioPath && fallbackAudioUrl) {
-      console.warn("Local ambient soundscape file /ambient.mp3 not found. Defaulting to premium remote stream.");
-      setAudioSource(fallbackAudioUrl);
-    }
+    console.warn("Audio file could not be played:", audioSource);
   };
 
   // Safe and precise state toggle control
@@ -102,19 +97,7 @@ export default function AudioPlayer({
             fadeAudio(1, 500);
           })
           .catch((err) => {
-            console.error("Direct play requested but failed, trying fallback: ", err);
-            setAudioSource(fallbackAudioUrl);
-            setTimeout(() => {
-              const retryAudio = audioRef.current;
-              if (retryAudio) {
-                retryAudio.volume = 0;
-                retryAudio.play()
-                  .then(() => {
-                    fadeAudio(1, 500);
-                  })
-                  .catch(e => console.error("Fallback path play failed:", e));
-              }
-            }, 50);
+            console.error("Direct play requested but failed: ", err);
           });
       } else {
         // If already playing but in middle of fading out, smoothly fade back up
